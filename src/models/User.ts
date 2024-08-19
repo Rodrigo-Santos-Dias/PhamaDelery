@@ -1,10 +1,10 @@
 import { Product } from "./Product";
 
-export default interface Usuario {
+export default interface User {
     id: number;
-    nome: string;
-    usuario: string;
-    foto: string;
-    senha: string;
+    name: string;
+    user: string;
+    photo: string;
+    password: string;
     product?: Product | null;
   }

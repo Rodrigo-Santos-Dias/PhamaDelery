@@ -7,7 +7,7 @@ interface FooterProps {
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-gray-800 text-white py-6">
+    <footer className="bg-gradient-to-r from-green-800 to-blue-600 text-white py-6">
       <div className="container mx-auto text-center">
         <p className="text-sm">
           &copy; year ={new Date().getFullYear()} Nome da Farmácia. Todos os direitos reservados.

@@ -3,12 +3,12 @@
 // import { toastAlerta } from "../utils/toastAlerta"
 
 import { ReactNode, createContext, useState } from "react"
-import UsuarioLogin from "../models/UserLogin"
+
 import { login } from "../services/Services"
 import UserLogin from "../models/UserLogin"
 
 interface AuthContextProps {
-    usuario: UserLogin
+    user: UserLogin
     handleLogout(): void
     handleLogin(user: UserLogin): Promise<void>
     isLoading: boolean

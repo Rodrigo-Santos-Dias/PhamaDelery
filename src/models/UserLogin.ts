@@ -1,4 +1,4 @@
-export default interface UsuarioLogin {
+export default interface UserLogin {
     id: number;
     name: string;
     user: string;

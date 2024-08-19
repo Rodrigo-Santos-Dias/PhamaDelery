@@ -18,6 +18,9 @@ const Navbar: React.FC = () => {
           <Link to="/contact" className="hover:text-gray-300">
             Contato
           </Link>
+          <Link to="/productForm" className="hover:text-gray-300">
+            Adicionar Produtos
+          </Link>
         </div>
         <div className="md:hidden">
           <button className="text-white focus:outline-none">

@@ -11,10 +11,9 @@ function Home() {
                         <h2 className='text-5xl font-bold'>Bem-vindo à nossa Farmácia!</h2>
                         <p className='text-xl'>Encontre os melhores produtos de saúde e bem-estar.</p>
   
-                        <div className="flex justify-around gap-4">
-                            <button className='rounded bg-white text-green-800 py-2 px-4'>Explorar Produtos</button>
-                            <Link to="/contact">
-                                <button className='rounded bg-white text-green-800 py-2 px-4'>Fazer Pedido</button>
+                        <div className="flex justify-around gap-4">     
+                            <Link to="/products">
+                                <button className='rounded bg-white text-green-800 py-2 px-4'>Explorar Produtos</button>
                             </Link>
                         </div>
                     </div>

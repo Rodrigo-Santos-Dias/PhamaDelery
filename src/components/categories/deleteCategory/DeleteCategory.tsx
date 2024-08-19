@@ -1,10 +1,10 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router';
-import { AuthContext } from '../../../contexts/AuthContext';
 
-import { toastAlert } from '../../../utils/toastAlert';
-import { find, deleteData } from '../../../services/Services';
+import { find, remove } from '../../../services/Services';
 import { Category } from '../../../models/Category';
+import { AuthContext } from '../../../contexts/AuthContexts';
+import { toastAlert } from '../../util/toastAlert';
 
 function DeleteCategory() {
     const [category, setCategory] = useState<Category>({} as Category);
@@ -50,7 +50,7 @@ function DeleteCategory() {
 
     async function deleteCategory() {
         try {
-            await deleteData(`/categories/${id}`, {
+            await remove(`/categories/${id}`, {
                 headers: {
                     'Authorization': token
                 }
